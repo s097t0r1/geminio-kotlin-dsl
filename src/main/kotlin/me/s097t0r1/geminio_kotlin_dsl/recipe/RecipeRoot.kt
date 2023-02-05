@@ -41,4 +41,3 @@ class RecipeRoot : RecipeNode {
     }
 }
 
-inline fun createRecipe(builder: RecipeRoot.() -> Unit) = RecipeRoot().apply(builder)
