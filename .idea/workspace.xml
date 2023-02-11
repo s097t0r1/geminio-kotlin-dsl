@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c415e384-94cb-4e33-868c-1ce0d342f6a6" name="Changes" comment="feat: add pretty printing for YAML">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/RecipeBuildersKtTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/recipeBuildersKtTestExpected.yaml" afterDir="false" />
+    <list default="true" id="c415e384-94cb-4e33-868c-1ce0d342f6a6" name="Changes" comment="test: add test for recipe from pet project">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/constants/Expression.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/yaml/YamlExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/yaml/YamlExt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/constants/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/constants/Constants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/constants/StringConstants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/constants/ExpressionExt.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +44,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Script" />
-        <option value="Kotlin File" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
@@ -59,19 +67,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/s097t0r1/IdeaProjects/geminio-kotlin-dsl/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/Users/s097t0r1/IdeaProjects/geminio-kotlin-dsl/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl" />
@@ -83,7 +92,30 @@
       <recent name="me.s097t0r1.geminio_kotlin_dsl.recipe" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RecipeBuildersKtTest.createRecipe">
+  <component name="RunManager" selected="Gradle.RecipeBuildersKtTest">
+    <configuration name="RecipeBuildersKtTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.s097t0r1.geminio_kotlin_dsl.recipe.RecipeBuildersKtTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="RecipeBuildersKtTest.createRecipe" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -116,6 +148,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RecipeBuildersKtTest" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.RecipeBuildersKtTest.createRecipe" />
         <item itemvalue="Gradle.RecipeBuildersKtTest.createRecipe" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
@@ -158,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676091734656</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat(yaml)!: add pretty printing for YAML">
+      <created>1676091827097</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676091827097</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test: add test for recipe from pet project">
+      <created>1676091932426</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676091932426</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,7 +226,9 @@
     <MESSAGE value="feat: add recipe builder and YAML helper extensions" />
     <MESSAGE value="refactor: bump kotlin version" />
     <MESSAGE value="feat: add pretty printing for YAML" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add pretty printing for YAML" />
+    <MESSAGE value="feat(yaml)!: add pretty printing for YAML" />
+    <MESSAGE value="test: add test for recipe from pet project" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: add test for recipe from pet project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
