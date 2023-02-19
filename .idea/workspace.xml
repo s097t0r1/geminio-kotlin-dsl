@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="c415e384-94cb-4e33-868c-1ce0d342f6a6" name="Changes" comment="" />
     <list default="true" id="c415e384-94cb-4e33-868c-1ce0d342f6a6" name="Changes" comment="test: add test for recipe from pet project">
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/RecipeModuleRoot.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/predefined_features/EnableModuleCreationParams.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/predefined_features/PredefinedFeatures.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/recipeModuleBuildersKtTestExpected.yaml" afterDir="false" />
+    <list default="true" id="c415e384-94cb-4e33-868c-1ce0d342f6a6" name="Changes" comment="test: add test for recipe from pet project">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/constants/Expression.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/RecipeBuilders.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/RecipeBuilders.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/RecipeBuildersKtTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/RecipeBuildersKtTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/constants/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/constants/Constants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/constants/StringConstants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/constants/ExpressionExt.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +35,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -82,7 +93,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/me/s097t0r1/geminio_kotlin_dsl" />
@@ -239,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676094948716</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: add module recipe feature">
+      <created>1676788185331</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676788185331</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,16 +279,12 @@
     <MESSAGE value="feat(yaml)!: add pretty printing for YAML" />
     <MESSAGE value="test: add test for recipe from pet project" />
     <MESSAGE value="refactor: rename &quot;Constant&quot; to &quot;Expression&quot; and add more ext functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: rename &quot;Constant&quot; to &quot;Expression&quot; and add more ext functions" />
+    <MESSAGE value="feat: add module recipe feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add module recipe feature" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/RecipeBuildersKtTest.kt</url>
-          <line>162</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jrt:///Applications/IntelliJ IDEA CE.app/Contents/jbr/Contents/Home!/java.base/jdk/internal/loader/BuiltinClassLoader.class</url>
           <line>86</line>
