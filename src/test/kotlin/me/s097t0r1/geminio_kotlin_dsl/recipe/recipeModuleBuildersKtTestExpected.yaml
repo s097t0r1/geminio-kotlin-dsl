@@ -12,8 +12,8 @@ optionalParams:
   minApi: 24
   minBuildApi: 32
 predefinedFeatures:
-  enableModuleCreationParams:
-    defaultPackageNamePrefix: me.s097t0r1.ktcast
+  - enableModuleCreationParams:
+      defaultPackageNamePrefix: me.s097t0r1.ktcast
 widgets:
 - booleanParameter:
     help: Generate starter interface
