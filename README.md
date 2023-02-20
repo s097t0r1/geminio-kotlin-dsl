@@ -9,13 +9,14 @@ Inspired by [github-workflows-kt](https://github.com/krzema12/github-workflows-k
 
 ## How to use?
 
-1. Install Kotlin as a stand-alone binary, e.g. from Brew for MacOS:
+1. Install Kotlin as a stand-alone binary, e.g. from Brew for macOS:
 ```shell
 $ brew install kotlin
 ```
 2. Create a new executable file in your repository:
 ```shell
-touch path/to/geminio/recipe/name.main.kts
+$ touch path/to/geminio/recipe/name.main.kts
+$ chmod +x path/to/geminio/recipe/name.main.kts
 ```
 > **IMPORTANT:** name of file should end `.main.kts`
 
@@ -23,24 +24,25 @@ touch path/to/geminio/recipe/name.main.kts
 ``` kotlin
 #!/usr/bin/env kotlin
 
-@file:DependsOn("it.krzeminski:github-actions-kotlin-dsl:0.37.0")
+@file:Repository("https://jitpack.io")
+@file:DependsOn("me.s097t0r1:geminio-kotlin-dsl:1.0.0")
 
-import it.krzeminski.githubactions.actions.actions.CheckoutV3
-import it.krzeminski.githubactions.domain.RunnerType.UbuntuLatest
-import it.krzeminski.githubactions.domain.triggers.Push
-import it.krzeminski.githubactions.dsl.workflow
-import it.krzeminski.githubactions.yaml.toYaml
+import me.s097t0r1.geminio_kotlin_dsl.recipe.createRecipe
+import me.s097t0r1.geminio_kotlin_dsl.recipe.yaml.toYaml
 
-val workflow = workflow(
-    name = "Test workflow",
-    on = listOf(Push()),
-    sourceFile = __FILE__.toPath(),
-) {
-    job(id = "test_job", runsOn = UbuntuLatest) {
-        uses(name = "Check out", action = CheckoutV3())
-        run(name = "Print greeting", command = "echo 'Hello world!'")
-    }
-}
+val recipe = createRecipe {
+    requiredParams(
+        name = "Test recipe",
+        description = "Test recipe description"
+    )
 
-println(workflow.toYaml())
+    /* TYPE YOUR CODE HERE */
+
+}.unwrap().toYaml().also(::println)
+```
+
+4. Generate the YAML by calling the above script and redirecting its output to the desired YAML file path:
+
+```shell
+$ ./recipe.main.kts > recipe.yaml
 ```
