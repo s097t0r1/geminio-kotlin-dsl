@@ -12,7 +12,10 @@ class EnableModuleCreationParams() : RecipeNode {
 
     companion object {
         private const val DEFAULT_PACKAGE_NAME_PREFIX_KEY = "defaultPackageNamePrefix"
+        private const val ENABLE_MODULE_CREATION_PARAMS_KEY = "enableModuleCreationParams"
     }
 
-    override fun unwrap(): Any = nodes
+    override fun unwrap(): Map<String, Any> = mapOf(
+        ENABLE_MODULE_CREATION_PARAMS_KEY to nodes
+    )
 }

@@ -150,7 +150,7 @@ internal class RecipeBuildersKtTest {
                     elseCommands = {}
                 )
             }
-        }.unwrap().toYaml().lines()
+        }.unwrap().toYaml().also(::println).lines()
 
         val expectedContent = File(
             "src/test/kotlin/me/s097t0r1/geminio_kotlin_dsl/recipe/recipeModuleBuildersKtTestExpected.yaml"
