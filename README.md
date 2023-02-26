@@ -27,7 +27,7 @@ $ chmod +x path/to/geminio/recipe/name.main.kts
 #!/usr/bin/env kotlin
 
 @file:Repository("https://jitpack.io")
-@file:DependsOn("me.s097t0r1:geminio-kotlin-dsl:1.0.0")
+@file:DependsOn("com.github.s097t0r1:geminio-kotlin-dsl:1.0.0")
 
 import me.s097t0r1.geminio_kotlin_dsl.recipe.createRecipe
 import me.s097t0r1.geminio_kotlin_dsl.recipe.yaml.toYaml
