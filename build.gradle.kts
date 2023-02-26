@@ -21,7 +21,7 @@ afterEvaluate {
                 from(components["kotlin"])
                 groupId = "me.s097t0r1"
                 artifactId = "geminio-kotlin-dsl"
-                version = "0.1"
+                version = "1.0.0"
             }
         }
     }
