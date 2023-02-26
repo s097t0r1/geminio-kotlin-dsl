@@ -1,5 +1,7 @@
 # geminio-kotlin-dsl
 
+[![](https://jitpack.io/v/s097t0r1/geminio-kotlin-dsl.svg)](https://jitpack.io/#s097t0r1/geminio-kotlin-dsl)
+
 ## Why?
 Allows to use all features of strongly typed language,
 such as autocompletion and highlighting of incorrect constructions, and for
